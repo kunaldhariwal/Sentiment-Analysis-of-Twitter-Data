@@ -1,10 +1,10 @@
 load('image.RData')
 download.file(url = "http://curl.haxx.se/ca/cacert.pem",
               destfile = "cacert.pem")
-setup_twitter_oauth('Qdve8CbvwOB29H5n2rLFlWpk8', # api key
-                    'Hwh5Hk25zSJ8oD3gRKXgLBSIken1BsA1Vl2UBWALHHVDYjD4vn', # api secret
-                    '3301393717-zrfLkPoJtBwoPVLDgeKxQOSoSLKb8cf3W597t2W', # access token
-                    'jbiHJTaDW8a47IA89NutNT8dYtaKBBOdoUY00j2elQF4e' # access token secret
+setup_twitter_oauth('Use you key', # api key
+                    '', # api secret
+                    '', # access token
+                    '' # access token secret
 )
 
 df_tweets <- twListToDF(searchTwitter('HappyChildrensDay OR #HappyChildrensDay', n = 1000, lang = 'en')) %>%
